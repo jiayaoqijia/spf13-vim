@@ -54,7 +54,6 @@
         "Bundle 'greyblake/vim-preview'
         Bundle 'matchit.zip'
         Bundle 'bufexplorer.zip'
-
     " General Programming 
         "Bundle 'spf13/snipmate.vim'
 
@@ -72,6 +71,10 @@
         Bundle 'majutsushi/tagbar'
 
         Bundle 'godlygeek/tabular'
+
+        " This allows easily switching between .h/.cpp and similar file pairs
+        " with :A
+        Bundle 'taxilian/a.vim.git'
 
     " PHP
         Bundle 'spf13/PIV'
@@ -219,15 +222,15 @@
     " The following two lines conflict with moving to top and bottom of the
     " screen
     " If you prefer that functionality, comment them out.
-    map <S-H> gT
-    map <S-L> gt
+    "map <S-H> gT
+    "map <S-L> gt
 
     " Stupid shift key fixes
-    cmap W w
-    cmap WQ wq
-    cmap wQ wq
-    cmap Q q
-    cmap Tabe tabe
+    "cmap W w
+    "cmap WQ wq
+    "cmap wQ wq
+    "cmap Q q
+    "cmap Tabe tabe
 
     " Yank from the cursor to the end of the line, to be consistent with C and D.
     nnoremap Y y$
@@ -363,10 +366,10 @@
     " }
 
     " Delimitmate {
-        au FileType * let b:delimitMate_autoclose = 1
+        "au FileType * let b:delimitMate_autoclose = 1
 
-        " If using html auto complete (complete closing tag)
-        au FileType xml,html,xhtml let b:delimitMate_matchpairs = "(:),[:],{:}"
+        "" If using html auto complete (complete closing tag)
+        "au FileType xml,html,xhtml let b:delimitMate_matchpairs = "(:),[:],{:}"
     " }
 
     " AutoCloseTag {
@@ -378,9 +381,9 @@
     " SnipMate {
         " Setting the author var
         " If forking, please overwrite in your .vimrc.local file
-        let g:snips_author = 'Steve Francia <steve.francia@gmail.com>'
-        " Shortcut for reloading snippets, useful when developing
-        nnoremap ,smr <esc>:exec ReloadAllSnippets()<cr>
+        "let g:snips_author = 'Steve Francia <steve.francia@gmail.com>'
+        "" Shortcut for reloading snippets, useful when developing
+        "nnoremap ,smr <esc>:exec ReloadAllSnippets()<cr>
     " }
 
     " NerdTree {
