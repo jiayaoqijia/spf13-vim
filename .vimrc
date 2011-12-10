@@ -39,24 +39,38 @@
 
 "    " General
         Bundle 'scrooloose/nerdtree'
-        Bundle 'altercation/vim-colors-solariz'
+        Bundle 'altercation/vim-colors-solarized'
+        Bundle 'Wombat'
+        Bundle 'taxilian/herald.vim'
         Bundle 'spf13/vim-colors'
         Bundle 'tpope/vim-surround'
         Bundle 'ervandew/supertab'
-        Bundle 'Raimondi/delimitMate'
+        " Pick one of delimitMate or AutoClose
+        "Bundle 'Raimondi/delimitMate'
+        Bundle 'AutoClose'
         Bundle 'wincent/Command-T'
         Bundle 'spf13/vim-preview'
-        bundle 'vim-scripts/sessionman.vim'
+        Bundle 'sessionman.vim'
         "Bundle 'greyblake/vim-preview'
         Bundle 'matchit.zip'
+        Bundle 'bufexplorer.zip'
 
     " General Programming 
         "Bundle 'spf13/snipmate.vim'
-        Bundle 'garbas/vim-snipmate'
-        Bundle 'spf13/snipmate-snippets'
+
+        "Bundle 'garbas/vim-snipmate'
+        "Bundle 'spf13/snipmate-snippets'
         Bundle 'tpope/vim-fugitive'
         Bundle 'scrooloose/nerdcommenter'
-        Bundle 'tomtom/checksyntax_vim'
+        Bundle 'ShowMarks'
+        
+        " Pick one of the checksyntax, jslint, or syntastic
+        "Bundle 'tomtom/checksyntax_vim'
+        "Bundle 'bloveridge/jslint.vim'
+        Bundle 'Syntastic'
+
+        Bundle 'majutsushi/tagbar'
+
         Bundle 'godlygeek/tabular'
 
     " PHP
@@ -72,8 +86,11 @@
         Bundle 'pythoncomplete'
 
     " Javascript
-        Bundle 'bloveridge/jslint.vim'
         Bundle 'leshill/vim-json'
+        Bundle 'groenewege/vim-less'
+
+    " HTML
+        Bundle 'HTML-AutoCloseTag'
 
     " Ruby
         Bundle 'rails.vim'
