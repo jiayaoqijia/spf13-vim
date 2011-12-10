@@ -1,0 +1,30 @@
+"set mouse=a
+set ttymouse=xterm2
+
+" Version Control (handy for VCS where open files can be changed by a pull)
+set autoread
+
+" Keybinding to format JSON
+"map <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
+
+" Auto-trim trailing whitespace
+autocmd FileType css,javascript,html,php,python,xml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+
+" Set sync area to avoid broken syntax highlighting
+autocmd BufEnter * :syntax sync minlines=500
+
+set wildignore+=*.o,*.obj,.bzr,.git,.hg,.svn,.DS_*,._*,.Trash*
+
+" Plugin-specific settings
+let g:CommandTMaxFiles=15000
+
+" Color schemes
+color wombat
+if has("gui_running")
+    color herald
+endif
+
+" Turn off spellchecking
+set nospell
+
+let mapleader = '\'
