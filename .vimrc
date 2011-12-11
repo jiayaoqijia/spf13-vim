@@ -96,7 +96,7 @@
         Bundle 'taxilian/vim-web-indent'
 
     " HTML
-        Bundle 'HTML-AutoCloseTag'
+        Bundle 'closetag.vim'
 
     " Ruby
         Bundle 'rails.vim'
