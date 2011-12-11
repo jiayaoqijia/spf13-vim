@@ -45,9 +45,11 @@
         Bundle 'spf13/vim-colors'
         Bundle 'tpope/vim-surround'
         Bundle 'ervandew/supertab'
+
         " Pick one of delimitMate or AutoClose
         "Bundle 'Raimondi/delimitMate'
         Bundle 'AutoClose'
+        
         Bundle 'wincent/Command-T'
         Bundle 'spf13/vim-preview'
         Bundle 'sessionman.vim'
@@ -91,6 +93,7 @@
     " Javascript
         Bundle 'leshill/vim-json'
         Bundle 'groenewege/vim-less'
+        Bundle 'taxilian/vim-web-indent'
 
     " HTML
         Bundle 'HTML-AutoCloseTag'
