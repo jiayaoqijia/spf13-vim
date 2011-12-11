@@ -460,9 +460,10 @@ function! InitializeDirectories()
   let parent = $HOME 
   let prefix = '.vim'
   let dir_list = { 
-              \ 'backup': 'backupdir', 
-              \ 'views': 'viewdir', 
-              \ 'swap': 'directory' }
+              \ 'backup': 'backupdir',
+              \ 'views': 'viewdir',
+              \ 'swap': 'directory',
+              \ 'undo': 'undodir' }
 
   for [dirname, settingname] in items(dir_list)
       let directory = parent . '/' . prefix . dirname . "/"
