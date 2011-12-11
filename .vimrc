@@ -37,7 +37,7 @@
         Bundle 'tomtom/tlib_vim'
         Bundle 'mileszs/ack.vim'
 
-"    " General
+    " General
         Bundle 'scrooloose/nerdtree'
         Bundle 'altercation/vim-colors-solarized'
         Bundle 'Wombat'
@@ -45,14 +45,12 @@
         Bundle 'spf13/vim-colors'
         Bundle 'tpope/vim-surround'
         Bundle 'ervandew/supertab'
-
         " Pick one of delimitMate or AutoClose
         "Bundle 'Raimondi/delimitMate'
         Bundle 'AutoClose'
-        
         Bundle 'wincent/Command-T'
         Bundle 'spf13/vim-preview'
-        Bundle 'sessionman.vim'
+        Bundle 'vim-scripts/sessionman.vim'
         "Bundle 'greyblake/vim-preview'
         Bundle 'matchit.zip'
         Bundle 'bufexplorer.zip'
@@ -83,7 +81,6 @@
         "Bundle 'taxilian/VimDebugger'
 
     " Python
-        "Bundle 'bloveridge/pyflakes-vim'
         Bundle 'generalov/pyflakes-vim'
         Bundle 'fs111/pydoc.vim'
         Bundle 'python.vim'
@@ -219,7 +216,7 @@
     map <C-L> <C-W>l<C-W>_
     map <C-H> <C-W>h<C-W>_
     map <C-K> <C-W>k<C-W>_
-    
+
     " Wrapped lines goes down/up to next row, rather than next line in file.
     nnoremap j gj
     nnoremap k gk
@@ -366,10 +363,10 @@
     " }
 
     " Delimitmate {
-        "au FileType * let b:delimitMate_autoclose = 1
+        au FileType * let b:delimitMate_autoclose = 1
 
-        "" If using html auto complete (complete closing tag)
-        "au FileType xml,html,xhtml let b:delimitMate_matchpairs = "(:),[:],{:}"
+        " If using html auto complete (complete closing tag)
+        au FileType xml,html,xhtml let b:delimitMate_matchpairs = "(:),[:],{:}"
     " }
 
     " AutoCloseTag {
@@ -381,9 +378,9 @@
     " SnipMate {
         " Setting the author var
         " If forking, please overwrite in your .vimrc.local file
-        "let g:snips_author = 'Steve Francia <steve.francia@gmail.com>'
-        "" Shortcut for reloading snippets, useful when developing
-        "nnoremap ,smr <esc>:exec ReloadAllSnippets()<cr>
+        let g:snips_author = 'Steve Francia <steve.francia@gmail.com>'
+        " Shortcut for reloading snippets, useful when developing
+        nnoremap ,smr <esc>:exec ReloadAllSnippets()<cr>
     " }
 
     " NerdTree {
