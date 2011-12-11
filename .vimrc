@@ -115,6 +115,7 @@
     filetype plugin indent on   " Automatically detect file types.
     syntax on                   " syntax highlighting
     set mouse=a                 " automatically enable mouse usage
+    set ttymouse=xterm2         " makes mouse work on terminals that support it
     "set autochdir              " always switch to the current file directory.. Messes with some plugins, best left commented out
     " not every vim is compiled with this, use the following line instead
     " If you use command-t plugin, it conflicts with this, comment it out.
@@ -127,6 +128,7 @@
     set virtualedit=onemore         " allow for cursor beyond last character
     set history=1000                " Store a ton of history (default is 20)
     set spell                       " spell checking on
+    set autoread                    " automatically reads, helpful when VCS may have changed the file
 
     " Setting up the directories {
         set backup                      " backups are nice ...
@@ -268,17 +270,12 @@
     imap [F $
     map [H g0
     imap [H g0
-        
+
     " For when you forget to sudo.. Really Write the file.
     cmap w!! w !sudo tee % >/dev/null
 " }
 
 " Plugins {
-
-    " VCSCommand {
-"       let b:VCSCommandMapPrefix=',v'
-"       let b:VCSCommandVCSType='git'
-    " }
 
     " PIV {
         let g:DisableAutoPHPFolding = 0
