@@ -66,7 +66,7 @@
         " Pick one of the checksyntax, jslint, or syntastic
         "Bundle 'tomtom/checksyntax_vim'
         "Bundle 'bloveridge/jslint.vim'
-        Bundle 'Syntastic'
+        Bundle 'scrooloose/syntastic'
 
         Bundle 'majutsushi/tagbar'
 

@@ -15,6 +15,8 @@
     color wombat_btl
     if has("gui_running")
         color herald_btl
+        set guifont=Droid\ Sans\ Mono
+        set transparency=1
     endif
     set nofoldenable                  " auto fold code
     set gdefault                    " the /g flag on :s substitutions by default
@@ -37,6 +39,7 @@
     " TagBar and ctags {
         unmap <C-F10>
         map <C-F10> :TagbarToggle<CR>
+        map <C-]> g]
         map <leader>tn :tNext<CR>
         map <leader>tp :tprevious<CR>
     " }
