@@ -12,9 +12,9 @@
 " Vim UI {
 
     " Color schemes
-    color wombat
+    color wombat_btl
     if has("gui_running")
-        color herald
+        color herald_btl
     endif
     set nofoldenable                  " auto fold code
     set gdefault                    " the /g flag on :s substitutions by default

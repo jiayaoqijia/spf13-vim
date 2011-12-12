@@ -40,7 +40,7 @@
     " General
         Bundle 'scrooloose/nerdtree'
         Bundle 'altercation/vim-colors-solarized'
-        Bundle 'Wombat'
+        Bundle 'taxilian/Wombat'
         Bundle 'taxilian/herald.vim'
         Bundle 'spf13/vim-colors'
         Bundle 'tpope/vim-surround'
@@ -91,6 +91,7 @@
         Bundle 'leshill/vim-json'
         Bundle 'groenewege/vim-less'
         Bundle 'taxilian/vim-web-indent'
+        Bundle 'taxilian/jst_syntax'
 
     " HTML
         Bundle 'closetag.vim'
