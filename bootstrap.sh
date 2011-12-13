@@ -16,7 +16,7 @@ echo "thanks for installing spf13-vim, taxilian's clone\n"
 # Backup existing .vim stuff
 echo "backing up current vim config\n"
 today=`date +%Y%m%d`
-for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do [ -e $i ] && mv $i $i.$today; done
+for i in $HOME/.vim $HOME/.vimrc $HOME/.vimrc.fork $HOME/.gvimrc; do [ -e $i ] && mv $i $i.$today; done
 
 
 echo "cloning taxilian's fork of spf13-vim\n"
@@ -24,6 +24,7 @@ git clone --recursive -b 3.0 git://github.com/taxilian/spf13-vim.git $endpath
 mkdir -p $endpath/.vim/bundle
 ln -s $endpath/.vimrc $HOME/.vimrc
 ln -s $endpath/.vim $HOME/.vim
+ln -s $endpath/.vimrc.fork $HOME/.vimrc.fork
 
 echo "Installing Vundle"
 git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
