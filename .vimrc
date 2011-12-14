@@ -38,7 +38,7 @@
         Bundle 'mileszs/ack.vim'
 
     " General
-        Bundle 'scrooloose/nerdtree'
+        Bundle 'taxilian/nerdtree'
         Bundle 'altercation/vim-colors-solarized'
         Bundle 'taxilian/Wombat'
         Bundle 'taxilian/herald.vim'
