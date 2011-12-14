@@ -19,7 +19,7 @@
         set transparency=1
     endif
     set nofoldenable                  " auto fold code
-    set gdefault                    " the /g flag on :s substitutions by default
+    set nogdefault                    " the /g flag on :s substitutions by default
 
 " }
 
