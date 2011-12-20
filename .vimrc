@@ -60,6 +60,7 @@
         "Bundle 'garbas/vim-snipmate'
         "Bundle 'spf13/snipmate-snippets'
         Bundle 'tpope/vim-fugitive'
+        Bundle 'mattn/gist-vim'
         Bundle 'scrooloose/nerdcommenter'
         Bundle 'ShowMarks'
         
@@ -440,6 +441,21 @@
 
      " JSON {
         nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
+     " }
+
+     " gist-vim {
+         let g:gist_private = 1 " Default to private gists
+         if has("unix")
+             let s:uname = system("uname")
+             if s:uname == "Darwin\n"
+                 " Do Mac stuff here
+                 let g:gist_clip_command = 'pbcopy'
+             else
+                 let g:gist_clip_command = 'xclip -selection clipboard'
+                 " Do linux stuff here
+             endif
+         endif
+
      " }
 " }
 
