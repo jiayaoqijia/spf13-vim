@@ -78,7 +78,7 @@
         Bundle 'taxilian/a.vim.git'
 
     " PHP
-        Bundle 'spf13/PIV'
+        "Bundle 'spf13/PIV'
         "Bundle 'taxilian/VimDebugger'
 
     " Python
