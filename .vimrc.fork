@@ -23,6 +23,10 @@
 
 " }
 
+" Filetypes {
+    au BufNewFile,BufRead *.ejs         set filetype=jst
+" }
+
 " Key (re)Mappings {
     let mapleader = '\'
 " }

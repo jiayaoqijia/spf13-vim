@@ -91,8 +91,8 @@
     " Javascript
         Bundle 'leshill/vim-json'
         Bundle 'groenewege/vim-less'
-        Bundle 'taxilian/vim-web-indent'
-        Bundle 'taxilian/jst_syntax'
+        Bundle 'pangloss/vim-javascript'
+        Bundle 'briancollins/vim-jst'
 
     " HTML
         Bundle 'closetag.vim'
