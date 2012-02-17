@@ -29,6 +29,7 @@
 
 " Key (re)Mappings {
     let mapleader = '\'
+    map ;; $a;<ESC>hl
 " }
 " Plugins {
 
