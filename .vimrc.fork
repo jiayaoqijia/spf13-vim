@@ -43,7 +43,7 @@
         unmap <C-F10>
         map <C-F10> :TagbarToggle<CR>
         map <C-]> g]
-        map ,tn :tNext<CR>
+        map ,tn :tnext<CR>
         map ,tp :tprevious<CR>
     " }
     "
