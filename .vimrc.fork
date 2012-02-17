@@ -34,7 +34,8 @@
 " Plugins {
 
     " Supertab {
-        imap <c-space> <c-r>=SuperTabAlternateCompletion("\<lt>c-p>")<cr>
+        let g:SuperTabContextDefaultCompletionType = "<c-p>"
+        imap <c-space> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
         imap <a-space> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-]>")<cr>
     " }
 
