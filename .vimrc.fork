@@ -43,8 +43,8 @@
         unmap <C-F10>
         map <C-F10> :TagbarToggle<CR>
         map <C-]> g]
-        map <leader>tn :tNext<CR>
-        map <leader>tp :tprevious<CR>
+        map ,tn :tNext<CR>
+        map ,tp :tprevious<CR>
     " }
     "
     " ShowMarks {
