@@ -55,10 +55,8 @@
         Bundle 'matchit.zip'
         Bundle 'bufexplorer.zip'
     " General Programming 
-        "Bundle 'spf13/snipmate.vim'
-
-        "Bundle 'garbas/vim-snipmate'
-        "Bundle 'spf13/snipmate-snippets'
+        Bundle 'garbas/vim-snipmate'
+        Bundle 'spf13/snipmate-snippets'
         Bundle 'tpope/vim-fugitive'
         Bundle 'mattn/gist-vim'
         Bundle 'scrooloose/nerdcommenter'
